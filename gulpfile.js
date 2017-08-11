@@ -59,7 +59,8 @@ function build() {
       },
        externals: [
         {
-          'react-native': true
+          'react-native': true,
+          'react-native-navigation-experimental-compat': true
         }
       ],
       module: {
