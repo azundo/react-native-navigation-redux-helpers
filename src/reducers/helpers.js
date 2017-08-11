@@ -22,7 +22,7 @@ export function isActionPotentiallyApplicable(action, navigationKey) {
 
 export function getStateUtils() {
   try {
-    const { NavigationExperimental } = require('react-native');
+    const NavigationExperimental = require('react-native-navigation-experimental-compat');
     return NavigationExperimental.StateUtils;
   } catch(e) {
     // no-op

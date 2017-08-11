@@ -1,4 +1,4 @@
-const prefix = 'react-native-navigation-redux-helpers/';
+const prefix = 'react-native-navigation-redux-helpers-compat/';
 
 export const JUMP_TO = `${prefix}JUMP_TO`;
 export const PUSH_ROUTE = `${prefix}PUSH_ROUTE`;

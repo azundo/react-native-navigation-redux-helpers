@@ -1,8 +1,4 @@
 # React Native Navigation Redux helpers
-[![Build Status](https://travis-ci.org/bakery/react-native-navigation-redux-helpers.svg?branch=master)](https://travis-ci.org/bakery/react-native-navigation-redux-helpers)
-[![Code Climate](https://codeclimate.com/github/thebakeryio/react-native-navigation-redux-helpers/badges/gpa.svg)](https://codeclimate.com/github/thebakeryio/react-native-navigation-redux-helpers)
-[![Dependency Status](https://david-dm.org/thebakeryio/react-native-navigation-redux-helpers.svg)](https://david-dm.org/thebakeryio/react-native-navigation-redux-helpers)
-[![devDependency Status](https://david-dm.org/thebakeryio/react-native-navigation-redux-helpers/dev-status.svg)](https://david-dm.org/thebakeryio/react-native-navigation-redux-helpers#info=devDependencies)
 
 Reducers and actions to implement navigation in React Native applications (RN 0.28.0+)
 
@@ -15,7 +11,7 @@ Reducers and actions to implement navigation in React Native applications (RN 0.
 ## Getting started
 
 ```bash
-npm install --save react-native-navigation-redux-helpers
+npm install --save react-native-navigation-redux-helpers-compat
 ```
 
 ### Card navigation
@@ -23,7 +19,7 @@ npm install --save react-native-navigation-redux-helpers
 Define your card reducer 
 
 ```javascript
-import { cardStackReducer } from 'react-native-navigation-redux-helpers';
+import { cardStackReducer } from 'react-native-navigation-redux-helpers-compat';
 
 const initialState = {
   key: 'global',
@@ -42,10 +38,10 @@ module.exports = cardStackReducer(initialState);
 Use this reducer in NavigationCardStack in your component
 
 ```javascript
-import { NavigationExperimental } from 'react-native';
+import NavigationExperimental from 'react-native-navigation-experimental-compat';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { actions } from 'react-native-navigation-redux-helpers';
+import { actions } from 'react-native-navigation-redux-helpers-compat';
 
 const {
   popRoute,
@@ -124,7 +120,7 @@ import { TabBarIOS } from 'react-native';
 import React, { Component } from 'react';
 import Feed from '../Feed';
 import { connect } from 'react-redux';
-import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
+import { actions as navigationActions } from 'react-native-navigation-redux-helpers-compat';
 
 const { jumpTo } = navigationActions;
 
